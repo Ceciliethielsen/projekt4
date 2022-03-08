@@ -5,25 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel = "stylesheet" href="s.js">
+    <script src="s.js" defer></script>
     <link rel="stylesheet" href="s.css">
+    <!--Her indsættes link til søgeikonet-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="search">
-        <div class="icon"></div>
-        <div class="input">
-            <input type="text" placeholder="Søg.." id="mysearch">
-        </div>
-        <span class="clear" onclick="document.getElementById('mysearch').value=''"></span>
-    </div>
-    <script>
-        const icon = document.querySelector('.icon');
-        const search = document.querySelector('.search');
-        icon.onclick = function(){
-        search.classList.toggle('active');
-}
+<!--Søgefunktion-->
+<form class="example" action="action_page.php">
+    <input type="text" placeholder="Søg..." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</form>
 
-    </script>
+
 </body>
 </html>
