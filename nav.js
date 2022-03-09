@@ -1,8 +1,19 @@
-
-$(".fa-search").click(function(){
-    $(".icon").toggleClass("active");
-    $("input[type=text]").toggleClass("active");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".hamburger");
+ 
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 })
+ 
+document.querySelectorAll(".nav-link").forEach(n => n.
+    addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }))
+    
+    alert("Test for at se om js virker!");
+    
 
 
 

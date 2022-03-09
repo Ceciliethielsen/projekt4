@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Søg</title>
+    <link rel="stylesheet" href="nav.css">
+    <!--Her indsættes link til søgeikonet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <!--her er nav-baren kodet, inklusiv burgermenuen og søgefunktionen-->
+        <div class="navbar">
+            <a href="#back" class="back">Tilbage</a>
+            
+            <a href="#home" class="btn" target="blank"><i class="fa fa-home"></i></a>
+            <a href="#chat" class="btn" target="blank"><i class="fa fa-wechat"></i></a>
+
+        <!--Søgefunktion-->
+            <div class="box">
+                <form class="søg" action="action_page.php">
+                    <input type="text" placeholder="Søg..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                
+        </div>
+            <!--Burgermenu-->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <script src="nav.js" defer></script>
+            
+        </nav>
+    </header>
+
+</body>
+</html>
