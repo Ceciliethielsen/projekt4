@@ -1,0 +1,419 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ 
+
+ /*Navbar styling*/
+.navbar{
+    overflow: hidden;
+    background-color: #F1C8C0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Style navigation menulinks*/
+.navbar a{
+    color: #00454E;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 40px; 
+    display: block;
+    
+}
+.btn{
+    color: #00454E;
+    border: none;
+    background-color: #F1C8C0;
+    margin-left: 0px;
+    font-size: 10px;
+    text-align: left;
+}
+/*Søgefunktion*/
+*{
+    box-sizing: border-box;
+}
+    /*style til søgefeltet*/
+    form.søg input[type=text]{
+        padding: 10px;
+        font-size: 17px;
+        border: solid transparent;
+        float: left;
+        width: 150px;
+        background: #fff;
+        border-radius: 10px;
+    }
+    /*style til søge-knappen*/
+    form.søg button{
+        margin-left: -30px;
+        float: left;
+        width: 50px;
+        padding: 10px;
+        background-color: #FFF;
+        color: #00454E;
+        font-size: 17px;
+        border: solid transparent;
+        border-left: none;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    /*burgermenu*/
+        #burgermenu {
+            cursor: pointer;
+            height: 27px;
+            width: 27px;
+            margin: 50px;
+            overflow: visible;
+            position: relative;
+            z-index:2;
+        }
+        #burgermenu span,
+        #burgermenu span:before,
+        #burgermenu span:after {
+            background: #00454E;
+            display: block;
+            height: 2px;
+            opacity: 1;
+            position: absolute;
+            transition: 0.3s ease-in-out;
+        }
+        #burgermenu span:before,
+        #burgermenu span:after {
+            content: "";
+        }
+        #burgermenu span {
+            right: 0px;
+            top: 13px;
+            width: 27px;
+        }
+        #burgermenu span:before {
+            left: 0px;
+            top: -10px;
+            width: 27px;
+        }
+        #burgermenu span:after {
+            left: 0px;
+            top: 10px;
+            width: 27px;
+        }
+        
+        #burgermenu.close span {
+            transform: rotate(-45deg);
+            top: 13px;
+            width: 27px;
+        }
+        #burgermenu.close span:before {
+            top: 0px;
+            transform: rotate(90deg);
+            width: 27px;
+        }
+        #burgermenu.close span:after {
+            top: 0px;
+            left:0;
+            transform: rotate(90deg);
+            opacity:0;
+            width:0;
+        }
+        #menu{
+            z-index:1;
+            min-width:100%;
+            min-height:100%;
+            position: fixed;
+            top:0;
+            height:0;
+            visibility: hidden;
+            opacity: 0;
+            text-align:right;
+            padding-top:20px;
+            transition: all 0.3s ease-in-out;
+        }
+        #menu.overlay{
+            visibility: visible;
+            padding-top:100px;
+            background-color:#fff;
+            opacity: 80%;
+        }
+        #menu li{
+            list-style:none;
+        }
+        #menu a{
+            color:#00454E;
+            display:block;
+            font-size: 20px;
+            margin-bottom:30px;
+            text-decoration:none;
+        }
+
+    /*paragraf*/
+    .forum{
+        color: #00454E;
+        font-size: 15px;
+        text-align: center;
+        background-color: #F1C8C0;
+    }
+
+    .button1 {
+        /* style af vores buttons */
+        border: none;
+        color: white;
+        background-color: #00454E;
+        padding: 15px 32px;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 10px;
+        margin: 5px;
+        margin-top: 25px;
+    }
+     
+    .category {
+        /* centering af buttons */
+        display: flex;
+        justify-content: center;
+    }
+     
+    .plus {
+        /* style af vores plus ikon */
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        padding: 8px;
+        background: #fff;
+        border: 2px solid #F1C8C0;
+        color: #00454E;
+        font: 32px Arial, sans-serif;
+    }
+     
+    .nypost {
+        /* placering af vores plus ikon */
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+     
+    .post {
+        /* placering af opret post*/
+        padding: 0.5px;
+        display: flex;
+        justify-content: center;
+        font-size: larger;
+        font-weight: bolder;
+    }
+     
+    /* Create three equal columns that floats next to each other */
+     
+    .column {
+        float: row;
+        margin: auto;
+        width: 800px;
+        height: 350px;
+        padding: 50px;
+        background-color: #E3F1F0;
+        border-radius: 15px;
+    }
+     
+    /* Clear floats after the columns */
+     
+    .opslag:after {
+        content: "";
+        display: inline-block;
+        clear: both;
+    }
+     
+    .timesiden {
+        text-align: right;
+        margin-top: -40px;
+        margin-bottom: 20px;
+        font-size: 25px;
+        color: #00454E;
+    }
+     
+    .like-comment{
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+    #comment-box{
+        margin-left: 390px;
+        padding-left: 10px;
+        width: 230px;
+        font-size: 25px;
+    }
+
+    #comment-box, #send{
+        background-color: #E3F1F0;
+        border-radius: 5px;
+        color: #00454E;
+        border: none;
+    }
+
+    #send{
+        font-size: 45px;
+    }
+
+    .like {
+        font-size: 45px;
+        cursor: pointer;
+        color: #00454E;
+        
+    }
+     
+    .profile {
+        font-size: 75px;
+        text-align: left;
+        cursor: pointer;
+        margin-block-start: -20;
+        color: #548288;
+        display: flex;
+        
+        
+    }
+    .emma{
+        font-size: 50px;
+        margin-top: 19.5px;
+        margin-left: 12px;
+    }
+    
+    .txt{
+        font-size: 35px;
+    }
+
+    .mere{
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    footer {
+        text-align: center;
+        background-image: linear-gradient(white, #dadada 60%);
+        color: white;
+        padding: 0 24px;
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+     
+    }
+     
+    .footerbar{
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+        color: black;
+    }
+     
+    .btn2{
+        color: #00454E;
+        border: none;
+        margin-left: 0px;
+        font-size: 30px;
+    }
+    
+@media(max-width:768px){
+    .navbar{
+        justify-content: center;
+        align-items: center;
+    }
+ /*søgefunktion*/  
+    form.søg input[type=text]{
+        padding: 10px;
+        font-size: 10px;
+        width: 110px;
+        margin-left: 10px;
+    }
+    form.søg button{
+        width: 10px;
+        padding: 7px;
+        font-size: 15px;
+    }
+/*burgermenu*/
+    #burgermenu{
+        margin-right: 15px;
+        margin-left: 20px;
+    }
+    .column{
+        width: 90%;
+        height: 230px;
+    }
+    .button1{
+        padding: 10px 18px;
+        margin-top: 15px;
+        font-size: 10px;
+    }
+
+    .emma{
+        font-size: 30px;
+        margin-top: 40px;
+        margin-left: 12px;
+    }
+    .timesiden {
+        margin-top: -40px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .txt{
+        font-size: 18px;
+    }
+    .mere{
+        font-size: 16px;
+    }
+
+    #comment-box{
+        margin-left: 390px;
+        width: 150px;
+        font-size: 15px;
+    }
+    
+
+    #send{
+        font-size: 30px;
+    }
+
+    .like {
+        font-size: 30px;
+    }
+}
+@media(max-width:480px){
+    .timesiden {
+        margin-right: -30px;
+        margin-top: -40px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .profile {
+        font-size: 40px;
+        margin-top: -30px;  
+    }
+    .emma{
+        font-size: 25px;
+        margin-top: 14px;
+        margin-left: 12px;
+    }
+    .txt{
+        font-size: 17px;
+        margin-top: 20px;
+    }
+    #comment-box{
+        margin-left: 50px;
+        width: 130px;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    
+
+    #send{
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+    .like {
+        font-size: 25px;
+        margin-left: -20px;
+        margin-top: 17px;
+    }
+}

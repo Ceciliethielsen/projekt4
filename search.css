@@ -1,13 +1,69 @@
-body, html{
-    height 100%;
+.tilbage{
+    width: 100px;
+    height: 70px;
 }
-.back_img{
+.main{
     text-align: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 50px;
 }
-.bottomleft{
-    position: absolute;
-    left: 16px;
-    bottom: 5px;
-    width: 300px;
-    height: 100px;
+
+.img{
+    position: relative;
+
+}
+
+hr{
+    margin: auto;
+    width: 40%;
+}
+
+.timeBox{
+    display:inline-block;
+    font-size: 40px;
+}
+
+.ucl{
+    height: 130px;
+    width: 400px;
+    position: relative;
+    margin-top: 60px;
+    left: 10px;
+}
+
+@media (max-width: 780px){
+    .tilbage{
+        width: 70px;
+        height: 40px;
+    }
+    .main{
+        font-size: 25px;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 480px){
+    .tilbage{
+        width: 60px;
+        height: 35px;
+    }
+    .main{
+        font-size: 13px;
+    }
+
+    .img{
+        height: 160px;
+        width: 300px;
+    }
+
+    .ucl{
+        height: 60px;
+        width: 180px;
+        margin-top: 230px;
+    }
+
+    .timeBox{
+        font-size: 18px;
+    }
 }

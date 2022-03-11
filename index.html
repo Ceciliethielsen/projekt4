@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Her indsættes link til søgeikonet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+        <div class="navbar">
+                <a href="nav.html" class="btn"><i class="fa fa-home"></i></a>
+                <a href="#chat" class="btn" target="blank"><i class="fa fa-wechat"></i></a>
+            <!--Søgefunktion-->
+                    <form class="søg" action="search.html">
+                        <input type="text" placeholder="Søg..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form> 
+                <!--Burgermenu-->
+                <div id="burgermenu">
+                    <span></span>   
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#">Mine Projekter</a></li>
+                        <li><a href="#">Indstillinger</a></li>
+                        <li><a href="#">Log ud</a></li>
+                    </ul>
+                    <script src="main.js" defer></script>
+                </div>
+        </div>
+        <p class="forum">FORUM</p>
+    </header>
+    <main>
+        <div class="category">
+            <button class="button1">ALLE</button>
+            <button class="button1">EVENTS</button>
+            <button class="button1">MULTIMEDIEDESIGN</button>
+        </div>
+        <div class="nypost">
+            <a href="#" class="plus" target=""><i class="fa fa-plus"></i></a>
+        </div>
+        <div class="post">
+            <p class="opret">OPRET POST</p>
+        </div>
+        <div class="opslag">
+            <div class="column">
+                <div class="timesiden">
+                    <div>1 time siden</div>
+                </div>
+                <!--Emma Hansen profil-->
+                    <div class="profile">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <p class="emma">Emma Hansen</p>
+                    </div>
+                <!--Emma Hansens opslag i Forum-->
+                <p class="txt">Hej alle. Jeg søger en multimediedesigner til mit kommende projekt, håber i vil hjælpe. Jeg har br...</p>
+                <p class="mere">Se mere</p>
+                <div class="like-comment">
+                    <div a class="like"><i class="fa fa-thumbs-up"></i></div>
+                    <!--kommentarfelt-->
+                    <input type="text" id="comment-box" placeholder="Skriv kommentar">
+                    <button id="send"><i class="fa fa-comments"></i></button>
+                    <ul id="unordered">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    
+    </main>
+    <footer>
+        <div class="footerbar">
+            <a href="box.html" class="btn2"><i class="fa fa-fw fa-home"></i></a>
+            <a href="#" class="btn2"><i class="fa fa-fw fa-user"></i></a>
+            <a href="#" class="btn2"><i class="fa fa-wechat"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

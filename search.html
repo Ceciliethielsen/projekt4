@@ -4,23 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon!</title>
-    <link rel="stylesheet" href="search.css">
+    <title>Document</title>
+    <link rel="stylesheet" a href="search.css">
+    <script type = "text/javascript">
+        function cdtd(){
+            var countdown = new Date ("July 26, 2022 08:00:00");
+            var now = new Date ();
+            var timeDiff = countdown.getTime() - now.getTime();
+            if (timeDiff <= 0){
+                clearTimeout(timer);
+                document.write("Under construction");
+            }
+
+            var seconds = Math.floor (timeDiff/1000);
+            var minutes = Math.floor (seconds/60);
+            var hours = Math.floor (minutes/60);
+            var days = Math.floor (hours/24);
+            hours %= 24;
+            minutes %= 60;
+            seconds %=60;
+
+            document.getElementById("daysbox").innerHTML = days;
+            document.getElementById("hoursbox").innerHTML = hours;
+            document.getElementById("minsbox").innerHTML = minutes;
+            document.getElementById("secsbox").innerHTML = seconds;
+
+            var timer = setTimeout('cdtd()',1000);
+        }
+    </script>
 </head>
 <body>
-    <div class="back_img">
-        <img src="billeder/ucl.png">
-    <div class="middle">
+    <header>
+    <a href="index.html">
+        <img src="billeder/tilbage-knap.png" class="tilbage">
+    </a>
+    </header>
+    <div class="main">
+        <img src="billeder/ucl.png" class="img" >
         <h1>COMING SOON!</h1>
         <hr>
-        <p>200 days</p>
+        
+        <div id ="daysbox" class="timeBox"></div>d
+        <div id = "hoursbox" class="timeBox"></div>h
+        <div id = "minsbox" class="timeBox"></div>m
+        <div id = "secsbox" class="timeBox"></div>s
+        <script type="text/javascript">cdtd();</script>
     </div>
-    <div class="text">
-        <p>Some text</p>
-    </div>
-    <div class="bottomleft">
-        <img src="billeder/logo.png">
-    </div>
-    </div>
+
+    <img src="billeder/logo.png" class="ucl">
 </body>
 </html>
