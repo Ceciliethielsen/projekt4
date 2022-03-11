@@ -1,5 +1,6 @@
 
-//Herunder er burgermenu lavet ved brug af
+/*Herunder er burgermenu lavet ved brug af "getElementById", som er hentet fra DOM. 
+*/
     var burgerMenu = document.getElementById('burgermenu');
     var overlay = document.getElementById('menu');
     burgerMenu.addEventListener('click',function(){
