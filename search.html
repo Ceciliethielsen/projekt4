@@ -6,32 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" a href="search.css">
-    <script type = "text/javascript">
-        function cdtd(){
-            var countdown = new Date ("July 26, 2022 08:00:00");
-            var now = new Date ();
-            var timeDiff = countdown.getTime() - now.getTime();
-            if (timeDiff <= 0){
-                clearTimeout(timer);
-                document.write("Under construction");
-            }
-
-            var seconds = Math.floor (timeDiff/1000);
-            var minutes = Math.floor (seconds/60);
-            var hours = Math.floor (minutes/60);
-            var days = Math.floor (hours/24);
-            hours %= 24;
-            minutes %= 60;
-            seconds %=60;
-
-            document.getElementById("daysbox").innerHTML = days;
-            document.getElementById("hoursbox").innerHTML = hours;
-            document.getElementById("minsbox").innerHTML = minutes;
-            document.getElementById("secsbox").innerHTML = seconds;
-
-            var timer = setTimeout('cdtd()',1000);
-        }
-    </script>
+    <script src="search.js"></script>
 </head>
 <body>
     <header>
@@ -43,7 +18,6 @@
         <img src="billeder/ucl.png" class="img" >
         <h1>COMING SOON!</h1>
         <hr>
-        
         <div id ="daysbox" class="timeBox"></div>d
         <div id = "hoursbox" class="timeBox"></div>h
         <div id = "minsbox" class="timeBox"></div>m

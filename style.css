@@ -1,6 +1,9 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
  /*Navbar styling*/
 .navbar{
@@ -13,7 +16,7 @@
 }
 /*Style navigation menulinks*/
 .navbar a{
-    color: #00454E;
+    color: F1C8C0;
     padding: 8px;
     text-decoration: none;
     font-size: 40px; 
@@ -46,11 +49,11 @@
         margin-left: -30px;
         float: left;
         width: 50px;
-        padding: 10px;
+        padding: 11.3px;
         background-color: #FFF;
         color: #00454E;
         font-size: 17px;
-        border: solid transparent;
+        border: solid transparent 1px;
         border-left: none;
         cursor: pointer;
         border-radius: 10px;
@@ -159,6 +162,7 @@
         border-radius: 10px;
         margin: 5px;
         margin-top: 25px;
+        font-weight: 400;
     }
     .category {
         /* centering af buttons */
@@ -169,23 +173,28 @@
         /* style af vores plus ikon */
         justify-content: center;
         border-radius: 50%;
-        width: 50px;
-        padding: 8px;
-        border: 2px solid #F1C8C0;
+        padding: 8px 18px;
+        border: 2px solid #E3F1F0;
         color: #00454E;
-        font: 32px Arial, sans-serif;
+        font-size: 32px;
     }
     .nypost {
         /* placering af vores plus ikon */
         display: flex;
         justify-content: center;
         padding: 15px;
+        
     }
     .post {
         /* placering af opret post*/
         display: flex;
         justify-content: center;
         font-size: 40px;
+    }
+
+    .opret{
+        font-weight:100;
+        font-style: italic;
     }
     /* Create three equal columns that floats next to each other */
     .column {
@@ -196,10 +205,10 @@
         padding: 50px;
         background-color: #E3F1F0;
         border-radius: 15px;
+        margin-bottom: 500px;
     }
     /* Clear floats after the columns */
     .opslag:after {
-        content: "";
         display: inline-block;
         clear: both;
     }
@@ -229,10 +238,16 @@
     #send{
         font-size: 45px;
     }
-    .like {
+    #like {
         font-size: 45px;
         cursor: pointer;
-        color: #00454E; 
+        color: #00454E;
+        border: transparent;
+        background-color: #E3F1F0;
+        
+    }
+    #likeamount{
+        font-size: 15px;
     }
     .profile {
         font-size: 75px;
@@ -242,13 +257,17 @@
         color: #548288;
         display: flex;  
     }
-    .emma{
-        font-size: 50px;
-        margin-top: 19.5px;
+    .link{
+        color: #548288;
+    }
+    .kimmi{
+        font-size: 35px;
+        margin-top: 48px;
         margin-left: 12px;
     }
     .txt{
-        font-size: 35px;
+        font-size: 20px;
+        font-weight: 400;
     }
     .mere{
         font-weight: bold;
@@ -304,7 +323,8 @@
     }
     .column{
         width: 90%;
-        height: 230px;
+        height: 300px;
+        margin-bottom: 200px;
     }
     .button1{
         padding: 10px 18px;
@@ -314,10 +334,13 @@
     .post {
         font-size: 30px;
     }
-
-    .emma{
-        font-size: 30px;
-        margin-top: 40px;
+    .profile {
+        font-size: 65px;
+        margin-bottom: 20px;
+    }
+    .kimmi{
+        font-size: 25px;
+        margin-top: 45px;
         margin-left: 12px;
     }
     .timesiden {
@@ -326,7 +349,7 @@
         font-size: 15px;
     }
     .txt{
-        font-size: 18px;
+        font-size: 17px;
     }
     .mere{
         font-size: 16px;
@@ -343,16 +366,18 @@
         font-size: 30px;
     }
 
-    .like {
+    #like {
         font-size: 30px;
     }
 }
 @media(max-width:480px){
+    
     .post {
         font-size: 18px;
     }
     .column{
-        height: 250px;
+        height: 270px;
+        margin-bottom: 100px;
     }
     .timesiden {
         margin-right: -30px;
@@ -364,13 +389,13 @@
         font-size: 40px;
         margin-top: -30px;  
     }
-    .emma{
-        font-size: 20px;
+    .kimmi{
+        font-size: 18px;
         margin-top: 17px;
         margin-left: 12px;
     }
     .txt{
-        font-size: 17px;
+        font-size: 14px;
         margin-top: 20px;
     }
     #comment-box{
@@ -379,16 +404,18 @@
         font-size: 15px;
         margin-top: 15px;
     }
-    
-
+    .mere{
+        font-size: 13px;
+    }
     #send{
         font-size: 25px;
         margin-top: 15px;
     }
 
-    .like {
+    #like {
         font-size: 25px;
         margin-left: -20px;
         margin-top: 17px;
     }
+    
 }

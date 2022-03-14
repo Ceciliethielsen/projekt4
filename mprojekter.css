@@ -1,0 +1,45 @@
+*{
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.tilbage{
+    width: 100px;
+    height: 70px;
+}
+.projektside{
+    float: row;
+        margin: 50px;
+        justify-content: center;
+        width: 800px;
+        height: 220px;
+        padding: 50px;
+        background-color: #E3F1F0;
+        border-radius: 15px;
+}
+#findkompetencer{
+    font-weight: 300;
+}
+@media (max-width: 780px){
+    .tilbage{
+        width: 70px;
+        height: 40px;
+    }
+    .projektside{
+        width: 500px;
+        height: 260px;
+        margin-left: 80px;
+    }
+
+}
+@media (max-width: 480px){
+    .tilbage{
+        width: 60px;
+        height: 35px;
+    }
+    .projektside{
+        width: 200px;
+        height: 440px;
+        margin-left: 2px;
+    }
+}

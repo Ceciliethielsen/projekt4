@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="mprojekter.js" defer></script>
+    <link rel="stylesheet" a href="mprojekter.css">
+    <title>StudyBudi - Mine Projekter</title>
+    <style>
+        @import url("https://use.typekit.net/ewd5obb.css");
+      </style>
+</head>
+<body>
+    <!--Knap til at komme tilbage til index-->
+    <a href="index.html">
+        <img src="billeder/tilbage-knap.png" class="tilbage">
+    </a>
+    <!--tekst på siden, som er lavet i JS-->
+    <div class="projektside">
+        <p id="hejprojekter"></p>  
+        <p id="findkompetencer"></p>
+    </div>
+    <!--JS fyld, for at få det manglende med-->
+    <p id="colorsParagraph"></p>
+    <button onMouseOver="changeColor(this, colors[2])" onMouseOut="changeColor(this, colors[3])">DETTE</button>
+    <br>
+    <button onMouseOver="changeColor(this, colors[2])" onMouseOut="changeColor(this, colors[3])">ER JO</button>
+    <br>
+    <button onMouseOver="changeColor(this, colors[2])" onMouseOut="changeColor(this, colors[3])">JAVASCRIPT</button>
+</body>
+</html>

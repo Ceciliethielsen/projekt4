@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Overskriften */
+.comment-box{
+    position: relative;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding-right: 50px;
+    font-family: Arial, Helvetica, sans-serif
+}
+ 
+.comment-box h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+ 
+}
+ 
+/*Overskrift tab*/
+.comment-box input{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: #E3F1F0;
+}
+/*Skriv opslag tab*/
+.comment-box textarea{
+    width: 100%;
+    height: 500px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: #E3F1F0;
+}
+/* Når man skriver text highlighter den*/
+.comment-box input:focus {
+    border: 1px solid black;
+    outline: 0;
+}
+ 
+.comment-box textarea:focus{
+    border: 1px solid black;
+    outline: 0;
+}
+ 
+.comment-box button{
+    border: 1px solid grey;
+    padding: 10px 30px;
+    background: #E3F1F0;
+    font-size: 18px;
+    border-radius: 5px;
+    color: grey;
+}
+footer {
+    text-align: center;
+    background-image: linear-gradient(white, #dadada 60%);
+    color: white;
+    padding: 0 24px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+ 
+}
+ 
+.footerbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    color: black;
+}
+ /* Button footer */
+.btn{
+    color: #00454E;
+    border: none;
+    margin-left: 0px;
+    font-size: 30px;
+}
+ 
+/* Knappen man klikker på for at få dropdown ned */
+.button{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 10px 30px;
+    font-size: 15px;
+    text-align: left;
+}
+/* Selve dropdown boksen */
+#list-items {
+   display: none;
+   position: absolute;
+   background-color: grey;
+   width: 450px;
+}
+/* Items i dropdown */
+#list-items a {
+    display: block;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+ 
+.comment-box button{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+h1{
+    padding-left: 45%;
+}
+ 
+p{
+    padding-left: 45%;
+}
