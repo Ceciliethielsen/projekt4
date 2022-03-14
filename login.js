@@ -1,3 +1,4 @@
+//Jakobs JS start
 var objPeople = [
     { 
     username: "jokh38987@edu.ucl.dk",
@@ -48,3 +49,4 @@ else {
 
 }
 }
+//Jakobs JS slut
