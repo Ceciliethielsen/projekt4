@@ -30,7 +30,8 @@ img
 }
 
 .topnav1{
-    margin-top: 75px;
+    margin-top: 50px;
+    
 }
 
 .resize {
@@ -40,7 +41,7 @@ img
 }
 
 
-#titel{
+#overskrift{
     display: flex;
     text-align: start;
     font-size: 18px;
@@ -81,12 +82,9 @@ form {
         outline: none;
         resize: none;
     }
-    
-  
- 
   
   /*Designet navbar*/
-#button {
+#button{
     background-color: rgb(0,69,78);
     color: rgb(255, 246, 246);
     text-align: center;
@@ -97,22 +95,17 @@ form {
     border-radius: 12px;
     cursor: pointer;
   }
-  
-  /*Når musen er over en knap i navn bar, skifter knappen farve og får en baggrundsskygge*/
-  #button :hover{
+  .topnav1 a{
+    background-color: rgb(0,69,78);
+    color: rgb(255, 246, 246);
+    text-align: center;
+    padding: 14px 100px;
+    text-decoration: none;
+    margin: 2px;
+    border: 2px solid rgb(0,69,78);
     border-radius: 12px;
-    background-color: rgb(241,200,192);
-    color: rgb(0,69,78);
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
   }
-  
-  /*Når du er inde under en knap, er farven ændret fast*/
-  #button .active {
-    background-color: rgb(241,200,192);
-    color: rgb(0,69,78);
-    border-radius: 12px;
-  }
-
     
   /* Add padding to containers */
   .container {
@@ -124,7 +117,7 @@ form {
   }
 
 .bund{
-margin-top: 125px;
+margin-top: 60px;
 justify-content: center;
 }
 
@@ -135,14 +128,15 @@ justify-content: center;
   
 
   /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
+  @media screen and (max-width: 480px) {
     span.psw {
       display: block;
       float: none;
     }
+    #button{
+      padding: 14px;
+    }
   }
-
-
 
   /* The alert message box */
 .alert {

@@ -10,20 +10,19 @@
     <style>
         @import url("https://use.typekit.net/ewd5obb.css");
       </style>
+    <script>
+        //Viser og skjuler dropdown menu med et klik
+        function show_hide() {
+           var click = document.getElementById("list-items");
+           if(click.style.display ==="none") {
+              click.style.display ="block";
+           } else {
+              click.style.display ="none";
+           }
+        }
+     </script>
 </head>
 <!--Jens' JS start-->
-<script>
-    //Viser og skjuler dropdown menu med et klik
-    function show_hide() {
-       var click = document.getElementById("list-items");
-       if(click.style.display ==="none") {
-          click.style.display ="block";
-       } else {
-          click.style.display ="none";
-       }
-    }
- 
- </script>
 <body>
  
     <!--underliggende tags hører til script sektionen under div-->
@@ -46,8 +45,8 @@
             <input type="Comment" placeholder="Overskrift">
             <textarea name="comment" placeholder="Skriv Opslag..."></textarea>
             <!--formaction tagged er der hvor klip på knappen fører dig hen-->
-            <button type="Submit" formaction="index.html">Tilføj Opslag</button>
-            <button type="Submit" formaction="index.html">Annuller</button2>
+            <button type="Submit" formaction="forum.html">Tilføj Opslag</button>
+            <button type="Submit" formaction="forum.html">Annuller</button2>
         </form>
     </div>
  
