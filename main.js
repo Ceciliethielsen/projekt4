@@ -1,5 +1,5 @@
 //alert("tjek om js virker!");
-//Cecilies JS start
+//Cecilie JS start
   /*Herunder er burgermenu lavet ved brug af "getElementById", som er hentet fra DOM. 
   */
       var burgerMenu = document.getElementById('burgermenu');
